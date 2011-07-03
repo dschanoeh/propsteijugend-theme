@@ -1,12 +1,12 @@
 /*
-Theme Name: Twenty Ten
+Theme Name: Propsteijugend Theme
 Theme URI: http://wordpress.org/
-Description: The 2010 theme for WordPress is stylish, customizable, simple, and readable -- make it yours with a custom menu, header image, and background. Twenty Ten supports six widgetized areas (two in the sidebar, four in the footer) and featured images (thumbnails for gallery posts and custom header images for posts and pages). It includes stylesheets for print and the admin Visual Editor, special styles for posts in the "Asides" and "Gallery" categories, and has an optional one-column page template that removes the sidebar.
-Author: the WordPress team
+Description: Child theme of the default twentyten wordpress theme. Used for the Homepage www.propsteijugendvorsfelde.de.
+Author: Jan-Niklas Meier
 Version: 1.2
 License: GNU General Public License
 License URI: license.txt
-Tags: black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
+Template: twentyten
 */
 
 
@@ -1355,3 +1355,40 @@ code {
 		border: none;
 	}
 }
+
+.category-zeltlager {
+    font-family: 'Special Elite', courier new, serif;
+    text-align: justify;
+
+    margin: 8px;
+    padding: 4px;
+    font-size: 16px;
+    background-color: #f9f1ca !important;
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -moz-column-rule-style: dotted;
+    -moz-column-rule-width: 1px;
+}
+
+.category-zeltlager h1 {
+    font-family: 'Ultra', arial, serif;
+    letter-spacing: 0.1em;
+    font-size: 28px;
+    font-variant: small-caps;
+}
+
+.category-zeltlager a {
+    color: black;
+}
+
+.category-zeltlager h3 {
+    font-family: 'Ultra', arial, serif;
+    font-variant: small-caps;
+    margin: 8px;
+}
+
+.category-zeltlager p {
+    padding: 4px;
+}
+
+
