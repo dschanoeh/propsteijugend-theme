@@ -1359,15 +1359,17 @@ code {
 .category-zeltlager {
     font-family: 'Special Elite', courier new, serif;
     text-align: justify;
-
-    margin: 8px;
-    padding: 4px;
+    /*margin: 8px;*/
+    padding: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-size: 16px;
-    background-color: #f9f1ca !important;
     -moz-column-count: 2;
-    -moz-column-gap: 20px;
-    -moz-column-rule-style: dotted;
-    -moz-column-rule-width: 1px;
+    -moz-column-gap: 10px;
+    /*-moz-column-rule-style: dotted;
+    -moz-column-rule-width: 1px;*/
+
+    background: url(images/bg_oben_nt.png) left top no-repeat, url(images/bg_unten_nt.png) left bottom no-repeat, url(images/bg_dyn_nt.png) center repeat-y;
 }
 
 .category-zeltlager h1 {
@@ -1389,6 +1391,9 @@ code {
 
 .category-zeltlager p {
     padding: 4px;
+    /*opacity: .2;
+    -moz-opacity: .2;
+    background-color: #fff;*/
 }
 
 

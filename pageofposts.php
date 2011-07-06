@@ -31,11 +31,11 @@ if ($category) {
   if( have_posts() ) : 
       while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 	    <div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-        <h1><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-        <div class="entry">
+        <h1 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+        <div class="entry-content">
           <?php the_content('Read the rest of this entry »'); ?>
         </div>
-        <p class="postmetadata"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?></p>
+        <p class="entry-utility"><?php the_tags('Tags: ', ', ', '<br />'); ?> Posted in <?php the_category(', ') ?> | <?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?></p>
       </div>
     <?php endwhile; ?>
     <div class="navigation">
